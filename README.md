@@ -7,4 +7,4 @@
 ### Site disponivel em: https://neves-gabriel.github.io/Projeto-02---Instagram/
 
 #### Preview do projeto:
-![Preview do projeto]()
+![Preview do projeto](img/preview.png)
