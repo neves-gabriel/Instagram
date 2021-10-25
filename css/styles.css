@@ -173,7 +173,7 @@ main{
 .story div {
     width: 66px;
     height: 66px;
-    background-image: url(../img/stories_background.png);
+    background-image: url(../assets/img/stories_background.png);
     background-size: 66px 66px;
     display: flex;
     justify-content: center;
@@ -386,6 +386,15 @@ aside {
 
 /* CSS Páginas menores que 614px - Modo Mobile */
 @media (max-width: 614px) {
+    body::-webkit-scrollbar {
+        display: none;
+    }
+
+    body {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+
     header.desktop {
         display: none;
     }
@@ -419,6 +428,10 @@ aside {
     }
 
     .posts {
+        width: 100%;
+    }
+
+    .post {
         width: 100%;
     }
 
