@@ -16,85 +16,92 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <div class="topo">
-        <div class="topo-conteudo">
-            <div class="topo-esquerda">
+    <header class="desktop">
+        <div class="top-container">
+            <div class="top-logo">
                 <ion-icon name="logo-instagram"></ion-icon>
-                <div class="linha-vertical"></div>  
+                <div class="spacer vertical"></div>
                 <img src="img/logo.png" alt="logotipo-instagram">
             </div>
             <input type="text" placeholder="Pesquisar">
-            <div class="topo-direita">
+            <div class="top-icons">
                 <ion-icon name="paper-plane-outline"></ion-icon>
                 <ion-icon name="compass-outline"></ion-icon>
                 <ion-icon name="heart-outline"></ion-icon>
                 <ion-icon name="person-outline"></ion-icon>
             </div>
-            <ion-icon name="paper-plane-outline"></ion-icon> 
         </div>
-    </div>
-    
-    <div class="linha-horizontal"></div>
-    <div class="conteudo">
-        <div class="barra-principal">
+    </header>
+
+    <header class="mobile">
+        <ion-icon name="logo-instagram"></ion-icon>
+        <img src="img/logo.png" alt="logotipo-instagram">
+        <ion-icon name="paper-plane-outline"></ion-icon>
+    </header>
+
+    <main>
+
+        <div class="main-feed">
+
             <div class="stories">
                 <div class="story">
                     <div>
                         <img src="img/9gag.png" alt="">
                     </div>
-                    9gag
+                    <span>9gag</span>
                 </div>
                 <div class="story">
                     <div>
                         <img src="img/meowed.png" alt="">
                     </div>
-                    meowed
+                    <span>meowed</span>
                 </div>
                 <div class="story">
                     <div>
                         <img src="img/barked.png" alt="">
                     </div>
-                    barked
+                    <span>barked</span>
                 </div>
                 <div class="story">
                     <div>
                         <img src="img/nathanwpylestrangeplanet.png" alt="">
                     </div>
-                    nathanwpyle...
+                    <span>nathanwpyle...</span>
                 </div>
                 <div class="story">
                     <div>
                         <img src="img/wawawiwacomicsa.png" alt="">
                     </div>
-                    wawawiwac...
+                    <span>wawawiwac...</span>
                 </div>
                 <div class="story">
                     <div>
                         <img src="img/respondeai.png" alt="">
                     </div>
-                    respondeai
+                    <span>respondeai</span>
                 </div>
                 <div class="story">
                     <div>
                         <img src="img/filomoderna.png" alt="">
                     </div>
-                    filomoderna
+                    <span>filomoderna</span>
                 </div>
                 <div class="story">
                     <div>
                         <img src="img/memeriagourmet.png" alt="">
                     </div>
-                    memeriago...
+                    <span>memeriago...</span>
                 </div>
                 <ion-icon name="chevron-forward-circle-sharp" id="seta"></ion-icon>
             </div>
+
             <div class="posts">
                 <div class="post">
-                    <div class="post-topo">
+                    <div class="post-top">
                         <div>
                             <img src="img/meowed.png" alt="gato-telefone">
                             meowed
@@ -103,7 +110,7 @@
                         </ion-icon>
                     </div>
                     <img src="img/gato-telefone.png" class="imagem" alt="gato-telefone">
-                    <div class="post-interacoes">
+                    <div class="post-interactions">
                         <div>
                             <ion-icon name="heart-outline"></ion-icon>
                             <ion-icon name="chatbubble-outline"></ion-icon>
@@ -113,11 +120,13 @@
                     </div>
                     <div class="likes">
                         <img src="img/respondeai.png" alt="respondeai"> 
-                        Curtido por respondeai e 101.523 pessoas
+                        <span>
+                            Curtido por <strong>respondeai</strong> e <strong>101.523 pessoas</strong>
+                        </span>
                     </div>
                 </div>
                 <div class="post">
-                    <div class="post-topo">
+                    <div class="post-top">
                         <div>
                             <img src="img/barked.png" alt="dog">
                             barked
@@ -125,7 +134,7 @@
                         <ion-icon name="ellipsis-horizontal"></ion-icon>
                     </div>
                     <img src="img/dog.png" class="imagem" alt="dog">
-                    <div class="post-interacoes">
+                    <div class="post-interactions">
                         <div>
                             <ion-icon name="heart-outline"></ion-icon>
                             <ion-icon name="chatbubble-outline"></ion-icon>
@@ -135,11 +144,13 @@
                     </div>
                     <div class="likes">
                         <img src="img/adorableanimals.png" alt="adorableanimals"> 
-                        Curtido por adorableanimals e 99.159 pessoas
+                        <span>
+                            Curtido por <strong>adorableanimals</strong> e <strong>99.159 pessoas</strong>
+                        </span>
                     </div>
                 </div>
                 <div class="post">
-                    <div class="post-topo">
+                    <div class="post-top">
                         <div>
                             <img src="img/adorableanimals.png" alt="urso">
                             adorableanimals
@@ -151,7 +162,7 @@
                         <source src="videos/video.ogg" type="video/ogg">
                         Your browser does not support the video tag.
                     </video>
-                    <div class="post-interacoes">
+                    <div class="post-interactions">
                         <div>
                             <ion-icon name="heart-outline"></ion-icon>
                             <ion-icon name="chatbubble-outline"></ion-icon>
@@ -161,84 +172,90 @@
                     </div>
                     <div class="likes">
                         <img src="img/barked.png" alt="barked"> 
-                        Curtido por barked e 77.852 pessoas
+                        <span>
+                            Curtido por <strong>barked</strong> e <strong>77.852 pessoas</strong>
+                        </span>
                     </div>
                 </div>
             </div>
+
         </div>
-        <div class="espacador"></div>
-        <div class="container-barra-lateral">
-            <div class="barra-lateral">
-                <div class="perfil">
+
+        <aside>
+            <div class="sidebar">
+                <div class="profile">
                     <img src="img/catanacomics.png" alt="catanacomics">
                     <div>
-                        catanacomicsCatana
+                       <h1>catanacomics</h1>
+                       <h2>Catana</h2> 
                     </div>
                 </div>
-                <div>
-                    <p class="sugestoes">
-                        Sugestões para você
-                    </p>
-                    Ver tudo
+                <div class="suggestions">
+                        <p>Sugestões para você<strong>Ver tudo</strong></p>
+                    <ul>
+                        <li>
+                            <img src="img/badvibesmemes.png" alt="badvibesmemes">
+                            <div>
+                                <h1>bad.vibes.memes</h1>
+                                <h2 class="subtitle">Segue você</h2>
+                            </div>
+                            <span>Seguir</span>
+                        </li>
+                        <li>
+                            <img src="img/chibirdart.png" alt="chibirdart">
+                            <div>
+                                <h1>chibirdart</h1>
+                                <h2 class="subtitle">Segue você</h2>
+                            </div>
+                            <span>Seguir</span>
+                        </li>
+                        <li>
+                            <img src="img/razoesparaacreditar.png" alt="razoesparaacreditar">
+                            <div>
+                                <h1>razoesparaacreditar</h1>
+                                <h2 class="subtitle">Novo no Instagram</h2>
+                            </div>
+                            <span>Seguir</span>
+                        </li>
+                        <li>
+                            <img src="img/adorableanimals.png" alt="adorableanimals">
+                            <div>
+                                <h1>adorable_animals</h1>
+                                <h2 class="subtitle">Segue você</h2>
+                            </div>
+                            <span>Seguir</span>
+                        </li>
+                        <li>
+                            <img src="img/smallcutecats.png" alt="smallcutecats">
+                            <div>
+                                <h1>smallcutecats</h1>
+                                <h2 class="subtitle">Segue você</h2>
+                            </div>
+                            <span>Seguir</span>
+                        </li>
+                    </ul>
                 </div>
-                <div>
-                    <img src="img/badvibesmemes.png" alt="badvibesmemes">
-                    <div>
-                        bad.vibes.memes
-                        Segue você
-                    </div>
-                    Seguir
-                </div>
-                <div>
-                    <img src="img/chibirdart.png" alt="chibirdart">
-                    <div>
-                        chibirdart
-                        Segue você
-                    </div>
-                    Seguir
-                </div>
-                <div>
-                    <img src="img/razoesparaacreditar.png" alt="razoesparaacreditar">
-                    <div>
-                        razoesparaacreditar
-                        Novo no Instagram
-                    </div>
-                    Seguir
-                </div>
-                <div>
-                    <img src="img/adorableanimals.png" alt="adorableanimals">
-                    <div>
-                        adorable_animals
-                        Segue você
-                    </div>
-                    Seguir
-                </div>
-                <div>
-                    <img src="img/smallcutecats.png" alt="smallcutecats">
-                    <div>
-                        smallcutecats
-                        Segue você
-                    </div>
-                    Seguir
-                </div>
-                <div class="rodape">
+                <div class="nav">
                     Sobre • Ajuda • Imprensa • API • Carreiras • Privacidade •
                     Termos • Localizações • Contas mais relevantes • Hashtags • 
                     Idioma
                 </div>
-                <div class="rodape">
+                <div class="nav">
                     © 2021 INSTAGRAM DO FACEBOOK
                 </div>
             </div>
-        </div>
-    </div>
-    <div class="barra-mobile">
+        </aside>
+
+    </main>
+
+    <footer>
         <ion-icon name="home"></ion-icon>
-        <ion-icon name="search"></ion-icon>
+        <ion-icon name="search-outline"></ion-icon>
         <ion-icon name="add-circle-outline"></ion-icon>
         <ion-icon name="heart-outline"></ion-icon>
         <ion-icon name="person-outline"></ion-icon>
-    </div>
+    </footer>
+
     <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
 </body>
 </html>
