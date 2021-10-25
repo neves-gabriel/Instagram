@@ -1,185 +1,90 @@
-body{
-    background: #fafafa;
+body {
     font-family: 'Roboto', sans-serif;
     color: #262626;
     overflow-x: hidden;
+    background: #FAFAFA;
 }
 
 ion-icon {
     font-size: 24px;
-    z-index:1;
     cursor: pointer;
 }
 
-a:link, a:visited {
-    color: #262626;
-}
-
-/* CSS Páginas menores que 935px */
-@media (max-width: 935px) {
-    .topo-esquerda{
-        margin:0px 15px;
-    }
-    .conteudo{
-        width: auto;
-        margin: auto;
-        align-items: center;
-        justify-content: center;
-        }
-    .espacador{
-        display: none;
-    }
-    .barra-lateral{
-        display: none;
-    }
-    .container-barra-lateral{
-        display: none;
-    }  
-}
-
-/* CSS Páginas menores que 614px - Modo Mobile */
-@media (max-width: 614px) {
-    .topo-esquerda div{
-        display: none;
-    }
-
-    .topo-conteudo input{
-        display: none;
-    }
-
-    .topo-direita a{
-        display: none;
-    }
-
-    .topo-esquerda{
-        width: 100%;
-        justify-content: space-between;
-    }
-
-    .topo-conteudo a .aviao{
-        display:block;
-        display:flex;
-    }
-
-    .linha-horizontal{
-        display: none;
-    }
-
-    .conteudo{
-        width: 100%;
-    }
-
-    .barra-principal{
-        width: 100%;
-    }
-
-    .stories{
-        width: 100%;
-        margin-top: 54px;
-        margin-bottom: 0px;
-        width: 100%;
-        height: 118px;
-        background: #ffffff;
-        border: 1px solid #DBDBDB;
-        box-sizing: border-box;
-        border-radius: 0px;
-    }
-
-    .stories #seta{
+/* CSS Footer */
+footer {
     display: none;
-    }
-
-    .posts{
-        width: 100%;
-    }
-
-    .post{
-        width: 100%;
-        border-radius: 0px;
-    }
-
-    .post img{
-        width: 100%;
-    }
-
-    .post video{
-        width: 100%;
-    }
-
-    .barra-mobile{
-        display:block;
-        position: fixed;
-        bottom: 0;
-        left: 0;
-        width: 100vw;
-        height: 54px;
-        background: #FFFFFF;
-        border: 1px solid #DBDBDB;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
+    height: 54px;
+    width: 100%;
+    background:#FFFFFF;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    align-items: center;
+    justify-content: center;
+    gap: 110px;
+    z-index: 2;
+    border: 1px solid #DBDBDB;
 }
 
-/* CSS Topo da página */
-.topo{
+/* CSS Header */
+header {
     height: 54px;
+    width: 100%;
     background:#FFFFFF;
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
-    display: flex;
     align-items: center;
-    z-index:10;
+    z-index: 2;
+    border: 1px solid #DBDBDB;
 }
 
-.topo-conteudo{
+header.desktop {
+    display: flex;
+}
+
+header.mobile {
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header.mobile ion-icon {
+    margin: auto 20px;
+}
+
+.top-container {
     width: 935px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: auto
+    margin: auto;
 }
 
-.topo-esquerda{
-    height: 54px;
+.top-logo {
     width: 150px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
 }
 
-.topo-esquerda .logotipo{
-    display: flex;
-    align-items: center;
-    font-size: 22px;
+.top-logo img {
+    cursor: pointer;
 }
 
-.topo-esquerda ion-icon{
+.top-logo ion-icon{
     font-size: 22px;
 }   
 
-.topo-conteudo .aviao{
-    display:none;
-}
-
-.linha-vertical{
+.spacer {
     width: 1px;
+    background: #E4E4E4;
+}
+
+.top-container .vertical {
     height: 22px;
-    background: #E4E4E4;
 }
 
-.linha-horizontal{
-    height: 1px;
-    background: #E4E4E4;
-    position: fixed;
-    top: 54px;
-    left: 0;
-    right: 0;
-}
-
-.topo-conteudo input{
+.top-container input{
     text-align: center;
     font-size: 12px;
     line-height: 14px;
@@ -191,43 +96,36 @@ a:link, a:visited {
     border-radius: 3px;
 }
 
-.topo-conteudo input:focus {
-    border: 1px solid #DBDBDB;
-    outline: none;
-}
-
-.topo-conteudo input::placeholder {
+.top-container input::placeholder {
     color: #979797;
     opacity: 1;
 }
 
-.topo-direita {
+.top-icons {
     width: 148px;
     display: flex;
     justify-content: space-between;
 }
 
-.topo-direita ion-icon{
+.top-icons ion-icon{
     font-size: 22px;
 }
 
 /* CSS Conteúdo da página */
-
-.conteudo{
+main{
     width: 935px;
     margin: 88px auto 0;
     display: flex;
 } 
 
-/* CSS Stories */
-
-.barra-principal{
+.main-feed {
     width: 614px;
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-between;
 }
 
+/* CSS Stories */
 .stories {
     width: 614px;
     height: 118px;
@@ -244,7 +142,7 @@ a:link, a:visited {
     margin-bottom: 24px;
 }
 
-.stories ion-icon{
+.stories ion-icon {
     position: absolute;
     width: 30px;
     height: 30px;
@@ -254,33 +152,33 @@ a:link, a:visited {
     cursor: pointer;
 }
 
-.story{
+.story {
+    width: 78px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 0px 7px;
+    margin-right: 2px;
 }
 
-.story a{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
+.story span {
+    width: 78px;
     font-size: 12px;
     line-height: 14px;
-    height: 85px;
-    width: 66px;
+    margin-top: 5px;
+    text-align: center;
+    cursor: pointer;
 }
 
-.story div{
+.story div {
     width: 66px;
     height: 66px;
-    background-image: url(../img/stories_background.jpg);
+    background-image: url(../img/stories_background.png);
     background-size: 66px 66px;
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 
 .story img{
@@ -290,13 +188,12 @@ a:link, a:visited {
 }
 
 /* CSS Posts */
-
-.posts{
+.posts {
     width: 614px;
     margin-bottom: 60px;
 }
 
-.post{
+.post {
     width: 614px;
     background: #FFFFFF;
     border: 1px solid #DBDBDB;
@@ -305,7 +202,7 @@ a:link, a:visited {
     margin-bottom: 60px;
 }
 
-.post-topo{
+.post-top {
     height: 54px;
     width: auto;
     display: flex;
@@ -317,23 +214,23 @@ a:link, a:visited {
     border-bottom: 1px solid #EFEFEF;
 }
 
-.post-topo div{
+.post-top div {
     display: flex;
     align-items: center;
 }
 
-.post-topo img:first-of-type{
+.post-top img:first-of-type {
     width: 32px;
     height: 32px;
     border-radius: 50%;
     margin-right: 15px;
 }
 
-video{
+video {
     width: 612px;
 }
 
-.post-interacoes{
+.post-interactions {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -341,40 +238,38 @@ video{
     margin: 10px 0px;
 }
 
-.post-interacoes a{
-    margin: 0px 5px;
+.post-interactions ion-icon {
+    margin: 0 5px;
 }
 
-.likes{
+.likes {
+    display: flex;
+    align-items: center;
     font-size: 14px;
     line-height: 16.41px;
     margin-bottom: 10px;
 }
 
-.likes .username{
-    color: #262626;
-    font-weight: bold;
+.likes strong {
+    cursor: pointer;
 }
 
-.likes img{
+.likes img {
     width: 20px;
     height: 20px;
     border-radius: 50%;
     margin-left: 15px;
+    margin-right: 5px;
     vertical-align: middle;
 }
 
 /* CSS Barra Lateral */
-
-.espacador{
-    width: 28px;
-}
-  
-.container-barra-lateral{
+aside {
     width: 293px;
+    margin-left: 28px;
 }
 
-.barra-lateral{
+.sidebar {
     width: 293px;
     height: 443px;
     left: auto;
@@ -383,93 +278,151 @@ video{
     justify-content: space-between;
     position: fixed;
     top: 88px;
-
 }
 
-.barra-lateral div{
+.sidebar .profile {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.barra-lateral div div{
+.sidebar .profile img {
+    width: 56px;
+    height: 56px;
+    margin:22px 17px 22px 0px;
+    cursor: pointer;
+}
+
+.sidebar  h1 {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    cursor: pointer;
+}
+
+.sidebar h2 {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: #8E8E8E;
+}
+
+.suggestions p {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    color: #8E8E8E;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 18px;
+}
+
+.suggestions p strong{
+    color: #262626;
+    cursor: pointer;
+}
+
+.suggestions li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.suggestions li span {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    color: #139EF2;
+    cursor: pointer;
+}
+
+.sidebar div div {
     display: flex;
     flex-direction: column;
     justify-content:space-between;
     align-items:flex-start;
     width: 100%;
     line-height: 18px;
-    font-size: 11px;
 }
 
-.barra-lateral div div .username{
-    font-size: 14px;
-}
-
-.barra-lateral div .seguir{
-    font-style: normal;
-    font-weight: 500;
+.sidebar .subtitle {
     font-size: 12px;
-    line-height: 14px;
-    display: flex;
-    align-items: center;
-    text-align: right;
-    color: #139EF2;
+    line-height: 22px;
+    color: #8E8E8E;
 }
 
-.barra-lateral img{
+.sidebar img {
     width: 32px;
     height: 32px;
     border-radius: 50%;
-    margin:8px 5px
+    margin:8px 5px;
+    cursor: pointer;
 }
 
-.barra-lateral .perfil img{
-    width: 56px;
-    height: 56px;
-    margin:22px 10px 22px 0px;
-}
-
-.barra-lateral .perfil div{
-    font-size: 14px;
-}
-
-.barra-lateral .rodape{
+.sidebar .nav {
+    margin-top: 15px;
     color: #C7C7C7;
     font-size: 11px;
     margin: 10px 0px;
     line-height: 13px;
+    cursor: pointer;
 }
 
-.barra-lateral .rodape a{
-    color: #C7C7C7;
+/* CSS Páginas menores que 935px */
+@media (max-width: 935px) {
+    .top-container {
+        width: 95%;
+    }
+
+    aside {
+        display: none;
+    }
+
+    main {
+        width: auto;
+        justify-content: center;
+    }
 }
 
-.barra-lateral .ver-tudo{
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 12px;
-    display: flex;
-    align-items: center;
-    text-align: right;
-    margin-bottom: 10px;
-}
+/* CSS Páginas menores que 614px - Modo Mobile */
+@media (max-width: 614px) {
+    header.desktop {
+        display: none;
+    }
 
-.barra-mobile{
-    display:none;
-}
-.sugestoes{
-    font-style: normal;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 14px;
-    display: flex;
-    align-items: center;
-    color: #8E8E8E;
-    margin-bottom: 10px;
-}
+    header.mobile {
+        display: flex;
+        margin: 0;
+    }
 
-ion-icon {
-    font-size: 24px;
-    z-index:1;
+    main {
+        width: 100%;
+        margin: 60px 0 0;
+    }
+
+    .main-feed {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .stories {
+        height: 121px;
+        border: none;
+        background: #FAFAFA;
+        margin: 0;
+        padding: 0;
+    }
+
+    .stories ion-icon {
+        display: none;
+    }
+
+    .posts {
+        width: 100%;
+    }
+
+    footer {
+        display: flex;
+    }
 }
