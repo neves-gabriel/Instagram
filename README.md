@@ -6,5 +6,7 @@
 
 ### Site disponivel em: https://neves-gabriel.github.io/Instagram/
 
-#### Preview do projeto:
-![Preview do projeto](img/preview.png)
+#### Previews do projeto:
+![Preview do projeto - desktop1](assets/previews/preview-desktop1.png)
+![Preview do projeto - desktop2](assets/previews/preview-desktop2.png)
+![Preview do projeto - mobile](assets/previews/preview-mobile.png)
